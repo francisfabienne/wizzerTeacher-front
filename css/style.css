@@ -1,0 +1,662 @@
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Nunito:wght@200;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ced4da;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+h3 {
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h5 {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+h6 { 
+    font-weight: bolder;
+}
+
+p {
+    font-weight: 200;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------
+
+ ---------------------------------     -  LANDING PAGE  -------------------------------------
+
+--------------------------------------------------------------------------------------------*/
+
+
+/*------------Navbar / menu ---------*/
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 999999px;
+    background: #000;
+    cursor: pointer;
+}
+
+
+nav.menu {
+    background: #ced4da;
+}
+
+div > li.item-out {
+    list-style-type: none;
+}
+
+div > li.item-out a {
+    color: #000;
+}
+
+/*----------- corps landing page --------*/
+
+
+/*-------- partie video / left-box / partie gauche- --------*/
+
+.presentation {
+    margin-top: 100px;
+}
+
+.left-Box {
+    padding-left: 50px;
+}
+
+.card-left {
+    border: none;
+}
+
+.video-box {
+    background: #ced4da;
+    /* width: 620px; */
+    height: 400px;
+    min-width: 350px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+/*-------- -------right-box / partie droite- -----------------*/
+
+.right-Box {
+    position: relative;
+}
+
+.right-Box-card__text {
+    height: 210px;
+    background: #ced4da;
+    border-radius: 15px;
+}
+
+.right-Box-btn__item {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+
+
+
+/*-------------------------------
+            INSCRIPTION PAGE
+----------------------------------*/
+
+
+
+.connexion-Box-left {
+    background: #ced4da;
+}
+
+.connexion-Box-left {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.connexion-card {
+    border-radius: 15px;
+}
+
+.connexion-card-header {
+    background: #f1f5f4;
+    border-radius: 15px;
+    border-bottom: none;
+}
+
+.connexion-card-footer {
+    border-top: none;
+}
+
+/*---------return-Box--------*/
+
+.return-Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.return-Box li {
+    list-style-type: none;
+}
+
+.return-Box li:nth-child(1):before {
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #111;
+    border-bottom: 3px solid #111;
+    transform: rotate(45deg);
+}
+
+.return-Box a {
+    color: #111;
+    padding: 10px;
+}
+
+.return-Box a:nth-child(1) {
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/*--------Right-box---------*/
+
+.form-field {
+    border-radius: 15px;
+    background: #e7eeee;
+    outline: none;
+    font-size: 13px;
+    border: none;
+}
+
+.form-field:focus {
+    outline: none;
+    border: none;
+}
+
+.btn-form {
+    border-radius: 15px;
+    background: #e4e7e6;
+    border: none;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------
+
+ -----------------------------------------  CONNEXION PAGE  ----------------------
+
+----------------------------------------------------------------------------------*/
+
+
+
+/*---- --------Header------------*/
+
+
+.return-Box-connexion {
+    padding-bottom: 25px;
+}
+
+.description-connexion {
+    padding-bottom: 85px;
+}
+
+
+/*--------------- Form ----------*/
+
+.forget-Box li {
+    list-style-type: none;
+}
+
+.forget-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 25px 12px;
+}
+
+.forget-link:hover {
+    color: #000;
+}
+
+.connexion-form {
+    padding-right: 35px;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------
+
+------------dashboard teacher Page-------------------------------------------------
+
+-----------------------------------------------------------------------------------*/
+
+
+/*side menu menu lateral*/
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-dashboard {
+    box-shadow: 2px 2px 3px #ced4da;
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.active-item {
+    background: #200E32;
+}
+
+.nav-item a, .nav-item span {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: #98A6C1;
+}
+
+.header-sidemenu a.link-btn{
+    font-size: 12px;
+}
+
+.link-footer, .link-text-avatar {
+    list-style-type: none;
+    text-decoration: none;
+    color: #98A6C1;
+    font-weight: 700;
+}
+
+.link-btn {
+    background: #98A6C1;
+    outline: none;
+    border: none;
+    font-weight: 400;
+}
+
+.link-text {
+    font-size: 10px;
+    color: #98A6C1;
+    font-weight: 700;
+}
+
+.sidemenu-icon {
+    background: #D3D9E4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link .active {
+    background: #200E32;
+}
+ 
+.navbar-dashboard {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #EBEDF2;
+    z-index: 9999;
+}
+
+/* ------------top menu / menu du haut -----------*/
+
+.dashboard-notif {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 155px;
+    padding-top: 15px;
+    /* border-bottom: 1px solid #EBEDF2; */
+    box-shadow: 0 2px 0  #EBEDF2;
+    position: fixed;
+    width: 100%;
+}
+
+.new-small-screen {
+    display: none;
+}
+
+.dashboard-notif h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 14px;
+    color: #98A6C1;
+}
+
+.notif-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.notif-bar li {
+    list-style-type: none;
+}
+
+.notif-bar li a {
+    margin: 10px;
+}
+
+.notif-bar li a img {
+    color: #8c919c;
+}
+
+.footer-sidemenu {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+}
+
+.link-footer {
+    font-size: 11px;
+}
+
+/*---------------header*/---------------
+
+section.header {
+  padding-top: 100px;
+}
+
+.box-center {
+    padding-left: 145px;
+    padding-right: 145px;
+}
+
+.header .header-box .header-profile {
+    min-width: 300px;
+}
+
+
+.header .header-box .header-profile h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.header .header-box .header-profile p {
+    font-weight: 400;
+}
+
+
+.header .header-box .header-stat .stat {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    background: #98A6C1;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header .header-box .header-stat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .header-box .header-stat .stat span {
+    font-weight: 700;
+}
+
+
+
+/*----------------calendar-----------------*/
+
+section.calendar {
+    background: #EBEDF2;
+    height: 210px;
+}
+
+
+/*------------------exercices----------------*/
+
+section.exercices .exercices-box .exercices-item {
+    width: 300px;
+    height: 170px;
+    background: #EBEDF2;
+    border-radius: 15px;
+    margin: 15px;
+    line-height: 15px;
+    min-width: 200px;
+   
+}
+
+section.exercices .exercices-box {
+    flex-wrap: wrap;
+}
+
+
+section.exercices .exercices-box .add {
+    background: #D3D9E4;
+}
+
+
+section.exercices .exercices-box .exercices-item h4 {
+    font-weight: 800;
+}
+
+
+section.exercices .exercices-box .exercices-item p {
+    font-weight: 400;
+}
+
+/*---------media queary-----------*/
+
+
+@media only screen and (max-width: 1200px){
+    /* .header-box {
+        flex-direction: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .header-box .header-stat {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .header-box .header-profile h2 {
+        font-size: 38px;
+    } */
+}
+
+ @media only screen and (max-width: 599px){
+
+    /*--------side menu/ menu lateral---------*/
+
+    body {
+        overflow-x: hidden;
+    }
+    .navbar-dashboard {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header-sidemenu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .exes {
+        margin-top: 11px;
+    }
+
+
+  
+
+    .new-large-screen {
+        display: none;
+    }
+    .footer-sidemenu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .link-text {
+        font-size: 9px;
+        margin-bottom: 20px;
+        display: none;
+        opacity: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+
+    /*-----top-menu / menu du haut------*/
+
+    .dashboard-notif {
+        padding-left: 30px;
+    }
+
+    .dashboard-notif h2 {
+        font-size: 19px;
+
+    }
+
+    .new-small-screen {
+        display: block;
+        position: relative;
+        left: 0;
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    /*-------header--------*/
+
+    .header .header-box .header-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .header-box .header-profile h2 {
+        text-align: center;
+        padding-right: 75px;
+        padding-left: 50px;
+    }
+
+    .header .header-box .header-profile p{
+        text-align: center;
+        padding-right: 75px;
+        padding-left: 50px;
+    } 
+
+    .header .header-box .header-stat {
+        flex-direction: column;
+    }
+
+    /*----------exercices----------*/
+
+    section.exercices {
+        margin-bottom: 100px;
+    }
+
+    section.exercices .exercices-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    
+}
+
+
+
+/*large screen*/
+
+@media only screen and (min-width: 600px) {
+   
+    /* .header .header-box .header-stat {
+        flex-direction: column;
+    }
+     */
+} 
